@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -8,101 +8,111 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="img/logo.svg" width="220" height="47" alt="Логотип компании Техномарт"></a>
-        <label><img src="img/icon-search.svg" width="17" height="17" alt=""><input type="search"
-                placeholder="Поиск:"></label>
-        <ul>
-            <li>
-                <img src="img/icon-bookmark.svg" width="14" height="16" alt="">
-                <a href="#">Закладки:<span>0</span></a>
-            </li>
-            <li>
-                <img src="img/icon-cart.svg" width="15" height="15" alt="">
-                <a href="#">Корзина:<span>0</span></a>
-            </li>
-            <li>
-                <a href="#">Оформить заказ</a>
-            </li>
-        </ul>
-        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <div>
-            <p><img src="img/icon-phone.svg" alt="" width="19" height="19"><a href="tel:+78125550555">+7 (812)
-                    555-05-55</a>
-            </p>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <section>
-            <div>
-                <a><img src="img/icon-user.svg" width="20" height="18" alt="">
-                    <p>Равшан Джамшутович</p>
-                </a>
-
-                <a href="#"><img src="img/icon-login.svg" alt="Кнопка выхода из личного кабинета" width="20"
-                        height="17"></a>
-            </div>
-            <div>
-                <a href="#">Мои заказы</a>
-                <span>·</span>
-                <a href="#">Личный кабинет</a>
-            </div>
-        </section>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a>
+<body class="page-body">
+    <header class="main-header">
+        <div class="header-account">
+            <a href=""><img class="main-header-logo" src="img/logo.svg" width="220" height="47p"
+                    alt="Логотип компании Техномарт"></a>
+            <label><img src="img/icon-search.svg" width="17" height="17" alt=""><input type="search"
+                    placeholder="Поиск:"></label>
+            <ul class="user-navigation">
+                <li class="user-navigation-item">
+                    <a href="#"><img src="img/icon-bookmark.svg" width="14" height="16" alt="">
+                        Закладки:<span>0</span></a>
                 </li>
-                <li>
-                    <a href="#">Компания</a>
+                <li class="user-navigation-item">
+                    <a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt=""> Корзина:<span>0</span></a>
                 </li>
-                <li>
-                    <a href="catalog.html">Каталог</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Спецпредложения</a>
-                </li>
-                <li>
-                    <a href="#">Доставка</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
+                <li class="user-navigation-item header-order">
+                    <a href="#">Оформить заказ</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+        <div class="header-about">
+            <p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <div class="header-contacts">
+                <p class="header-contacts-phone"><img src="img/icon-phone.svg" alt="" width="19" height="19"><a
+                        href="tel:+78125550555">+7 (812) 555-05-55</a>
+                </p>
+                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+
+            <section>
+                <div class="enter-link">
+                    <a><img src="img/icon-user.svg" width="20" height="18" alt="">
+                        <p>Равшан Джамшутович</p>
+                    </a>
+
+                    <a href="#"><img src="img/icon-login.svg" alt="Кнопка выхода из личного кабинета" width="20"
+                            height="17"></a>
+                </div>
+                <div class="user-order">
+                    <a href="#">Мои заказы</a>
+                    <span>·</span>
+                    <a href="#">Личный кабинет</a>
+                </div>
+            </section>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li class="site-navigation-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Компания</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="site-navigation-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
     </header>
 
     <main>
-        <h1>Каталог магазина Техномарт</h1>
-        <ul>
+        <h1 class="hidden">Каталог магазина Техномарт</h1>
+        <ul class="bread-crumbs-list">
             <li><a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная"></a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li><a href="#">Перфораторы</a></li>
         </ul>
-        <h2>Перфораторы</h2>
+        <h2 class="section-header catalog-header">Перфораторы</h2>
 
-        <section>
-            <h3>Фильтр:</h3>
+        <section class="section-filter">
+            <h3 class="filter-header">Фильтр:</h3>
             <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
-                    <legend>Цена:</legend>
+                    <legend class="filter-legend">Цена:</legend>
                     <input type="range" min="0" max="40000" step="1000" value="30000" id="range-price-field"
                         name="range-price">
-                    <label>От<input type="number" min="0" max="40000" value="0" name="min-price"></label>
+                    <label class="filter-price"><input type="number" min="0" max="40000" value="0" name="min-price"></label>
                     <span> - </span>
-                    <label>До<input type="number" min="1000" max="40000" value="30000" name="max-price"></label>
+                    <label class="filter-price"><input type="number" min="1000" max="40000" value="30000" name="max-price"></label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Производители:</legend>
-                    <ul>
+                    <legend class="filter-legend">Производители:</legend>
+                    <ul class="filter-manufacturer-list">
                         <li>
                             <label for="manufacturer-bosh">Bosh</label>
                             <input type="checkbox" checked name="manufacturer" value="bosh" id="manufacturer-bosh">
@@ -126,10 +136,10 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Питание:</legend>
-                    <ul>
+                    <legend class="filter-legend">Питание:</legend>
+                    <ul class="filter-power-list">
                         <li>
-                            <label><input type="radio" name="power" value="battery"checked>Аккумуляторные</label>
+                            <label><input type="radio" name="power" value="battery" checked>Аккумуляторные</label>
                         </li>
                         <li>
                             <label><input type="radio" name="power" value="socket">Сетевые</label>
@@ -140,11 +150,11 @@
             </form>
         </section>
 
-        <section>
-            <h3>Сортировка: </h3>
+        <section class="section-sort">
+            <h3 class="filter-header">Сортировка: </h3>
             <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
-                    <ul>
+                    <ul class="sort-type">
                         <li>
                             <label><input type="radio" name="sort" value="price">По цене</label>
                         </li>
@@ -160,8 +170,7 @@
             <fieldset>
                 <ul>
                     <li>
-                        <button><img src="img/icon-down-dir.svg" width="11" height="10"
-                                alt="по возрастанию"></button>
+                        <button><img src="img/icon-down-dir.svg" width="11" height="10" alt="по возрастанию"></button>
                     </li>
                     <li>
                         <button><img src="img/icon-down-dir.svg" width="11" height="10" alt="по убыванию"></button>
@@ -188,8 +197,7 @@
                 <li>
                     <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="">
                     <div>
-                        <button type="button"><img src="img/icon-cart.svg" width="15" height="15"
-                                alt="">Купить</button>
+                        <button type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="">Купить</button>
                         <button type="button">В закладки</button>
                     </div>
                     <h4>Перфоратор BOSCH BFG 6000</h4>
@@ -266,7 +274,7 @@
 
     </main>
 
-    <footer>
+    <footer class="page-footer main-footer">
         <section>
             <h2>Информация о компании</h2>
             <a href="index.html"><img src="img/logo.svg" width="220" height="68" alt="Логотип"></a>
