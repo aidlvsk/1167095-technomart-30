@@ -1,0 +1,458 @@
+/** Colors **/
+:root {
+    --basic-grey: #32425C;
+    --basic-dark-grey: #293449;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-light-grey: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --basic-beige: #F9F5F0;
+    --white: #FFFFFF;
+    --special-dark-grey: #161D29;
+    --special-yellow: #FFBF47;
+    --special-yellow-2: #FFC047;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFDA96;
+    --special-dark-red: #CA2C37;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+
+}
+
+/** Global **/
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family:'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.hidden {
+    display: none;
+}
+
+.button {
+    background-color: var(--basic-red);
+    color: var(--white);
+}
+
+.button:hover {
+    background-color: var(--special-dark-red) ;
+}
+
+.button:active {
+    background-color: var(--error);
+}
+
+/** Header **/
+
+.main-header {
+    background-color: var(--basic-background);
+    color: var(--white);
+}
+
+.header-account {
+    background-color: var(--basic-dark-grey);
+    color: var(--white);
+}
+
+.main-navigation {
+    background-color: var(--basic-grey);
+}
+
+.site-navigation a , .user-navigation a , .user-navigation-item span {
+    color: var(--white);
+}
+
+.site-navigation, .user-navigation {
+    list-style-type: none;
+}
+
+.header-info {
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: none;
+}
+
+.header-contacts {
+    color: var(--basic-grey);
+}
+
+.header-contacts-phone {
+    border: solid var(--white) 3px;
+}
+
+.header-contacts-phone a {
+    color: var(--basic-red);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.enter-link {
+    background-color: var(--white);
+    color: black;
+}
+
+.enter-link:hover {
+    color: var(--basic-red);
+}
+
+.enter-link:active {
+    color: var(--basic-light-grey);
+}
+
+.header-order {
+    background-color: var(--basic-green);
+}
+
+.header-order a:active {
+    background-color: inherit;
+}
+
+.navigation {
+    list-style-type: none;
+}
+
+.account-svg {
+    color: white;
+    opacity: 0.3;
+}
+
+.user-navigation-item a:hover .account-svg {
+    opacity: 1;
+}
+
+.user-navigation-item a:active {
+    background-color: var(--special-dark-grey);
+    color: rgba(255, 255, 255, 0.5);
+}
+.user-navigation-item a:active .account-svg, .user-navigation-item a:active span {
+    opacity: 0.3;
+}
+
+.site-navigation-item a:hover {
+    background-color: var(--basic-dark-grey);
+}
+
+.site-navigation-item a:active {
+    background-color: var(--special-dark-grey);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/**Features**/
+
+.features-list {
+    list-style-type: none;
+    color: var(--white);
+}
+
+.features-link {
+    color: var(--white);
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.features-link:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.features-link:active {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+.features-materials {
+  background-color: var(--special-yellow);
+}
+
+.features-tool {
+    background-color: var(--special-blue);
+}
+
+.features-technics {
+    background-color: var(--special-lilac);
+}
+
+.features-sales {
+    background-color: var(--special-greenlight);
+}
+
+.features-delivery {
+    background-color: var(--special-yellow);
+}
+
+.features-perforator {
+    background: var(--basic-beige) url(img/perforators.jpg) no-repeat;
+}
+
+.features-drill {
+    background: var(--basic-beige) url(img/drells.jpg) no-repeat;
+}
+
+/**Popular, Manufacturer**/
+
+.section-header {
+    color: var(--basic-grey);
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.popular-header, .manufacturer-header {
+    background-color: var(--basic-beige);
+}
+
+.popular-list, .manufacturer-list {
+    list-style-type: none;
+}
+
+.popular-item {
+    border: solid 1px var(--basic-light-grey);
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.popular-item:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.old-price {
+    color: var(--basic-light-grey);
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: line-through;
+}
+
+.actual-price {
+    background-color: var(--basic-red);
+    color: var(--white);
+}
+
+.manufacturer-item {
+    border: solid 1px var(--basic-light-grey);
+}
+
+.manufacturer-item:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/** Services **/
+
+.services-header {
+    background-color: var(--white);
+    color: black;
+}
+
+.section-description {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.services-button {
+    background-color: var(--basic-grey);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;  
+}
+
+.services-button:hover {
+    background-color: var(--basic-dark-grey);
+}
+
+.services-button:active {
+    background-color: var(--white);
+    color: var(--basic-grey);
+}
+
+.services-button:focus {
+    background-color: var(--white);
+    color: var(--basic-grey);
+}
+
+.content-delivery {
+    background: url(img/Layer-delivery.png) no-repeat;
+}
+
+.content-garantee {
+    background: url(img/Layer-garantee.png) no-repeat;
+}
+
+.content-credit {
+    background: url(img/Layer-credit.png) no-repeat; 
+}
+
+.content-header {
+    background-color: var(--white);
+}
+
+/** Promo **/
+
+.promo-header {
+    color: black;
+}
+
+.transport-list {
+    list-style-type: none;
+}
+
+/** Contacts **/
+
+.contacts-header {
+    color: black;
+}
+
+
+/** Footer **/
+
+.main-footer {
+    background-color: var(--basic-grey);
+    color: var(--white);
+}
+
+.footer-menu-about, .footer-menu-products {
+    list-style-type: none;
+}
+
+.footer-menu-about a {
+    color: var(--basic-background);
+}
+
+.footer-menu-products a {
+    color: var(--special-yellowlight);
+}
+
+.footer-contacts {
+    background-color: var(--basic-dark-grey);
+}
+
+.footer-social-list {
+    list-style-type: none;
+}
+
+.social-item {
+    background-color: var(--special-dark-grey);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-item:hover {
+    background-color: var(--basic-red);
+}
+
+.footer-adress a, .footer-developers a {
+    color: var(--special-yellowlight);
+}
+
+.menu-about-item a:hover, .menu-products-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-about-item a:active {
+    color: rgba(241, 245, 247, 0.5);
+    text-decoration: none;
+}
+
+.menu-products-item a:active {
+    color: rgba(255, 209, 128, 0.5);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link:active {
+    text-decoration: none;
+    color: var(--basic-red);
+}
+
+/** Catalog header **/
+
+.user-order a, span {
+    color: var(--basic-grey);
+}
+
+/** Catalog Bread crumbs **/
+
+.bread-crumbs-list {
+    list-style-type: none;
+}
+
+.bread-crumbs-list a {
+    color: black;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.catalog-header {
+    background-color: var(--basic-background);
+}
+
+/** Catalog filter, sort **/
+
+.section-filter, .section-sort  {
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.filter-header, .section-sort {
+    background-color: var(--basic-beige);
+    color: black;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filter-manufacturer-list, .filter-power-list, .sort-type  {
+    list-style-type: none;
+}
+
+.filter-manufacturer-list li, .filter-power-list li, .sort-type li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filter-legend {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    color: black;
+}
+.filter-price {
+    font-size: 17px;
+    line-height: 18px;
+}
+.section-sort {
+    background-color: var(--basic-beige);
+}
