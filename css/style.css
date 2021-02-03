@@ -101,9 +101,6 @@ img {
     opacity: 1;
 }
 
-.search-container:active .input-search::placeholder {
-    color:  rgba(255, 255, 255, 0.5);
-}
 
 .search-container:active .account-svg {
     opacity: 0.3;
@@ -299,6 +296,7 @@ img {
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
+    text-align: center;
 }
 
 .products-item:hover {
@@ -472,6 +470,20 @@ img {
     color: var(--basic-grey);
 }
 
+.header-login {
+    background-color: var(--white);
+}
+
+.login-link {
+    color: black;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.login-link:active {
+    color: var(--basic-light-grey);
+}
+
 /** Catalog Bread crumbs **/
 
 .bread-crumbs-list {
@@ -539,7 +551,33 @@ img {
     transform: rotate(180deg);
 }
 
+.sort-type {
+    list-style-type: none;
+}
+
+.sort-link {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: dashed var(--basic-red) 1px;
+}
+
+.sort-link:hover {
+    color: black;
+    border-bottom: solid var(--basic-red) 1px;
+}
+
+.sort-link:active {
+    color: var(--basic-red);
+    border: none;
+}
+
+.sort-active a {
+    color: var(--basic-red);
+    border: none;
+}
+
+
 /** Catalog products**/
+
 
 .button-buy {
     background-color: var(--basic-green);
@@ -584,15 +622,30 @@ img {
 /** Pagination **/
 
 .pagination {
-    color: black;
     font-family: font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     list-style-type: none;
+    text-align: center;
 }
 
-.pagination a {
+.pagination-link {
+    color: black;
+    border: 1px solid #E5E5E5;
+}
 
+.pagination-link:hover {
+    border: 1px solid var(--basic-light-grey);
+}
+
+.pagination-link:active {
+    border: 1px solid var(--basic-red);
+}
+
+.pagination-active a {
+    border: none;
+    background-color: var(--basic-red);
+    color: var(--white);
 }
 
