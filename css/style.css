@@ -565,6 +565,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 74px;
+    margin-bottom: 70px;
 }
 
 .promo-title {
@@ -601,8 +602,6 @@ img {
 .main-footer {
     background-color: var(--basic-grey);
     color: var(--white);
-
-    margin-top: 70px;
 }
 
 .footer-about {
@@ -723,6 +722,24 @@ img {
 
 .header-login {
     background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: black;
+    height: 45px;
+}
+
+.header-login a {
+    margin: 0;
+    padding: 0;
+}
+
+.login-name {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .login-link {
@@ -735,10 +752,21 @@ img {
     color: var(--basic-light-grey);
 }
 
+.user-menu {
+    margin: 41px 0px 42px 51px;
+}
+
 /** Catalog Bread crumbs **/
 
 .bread-crumbs-list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.bread-crumbs-item {
+    margin-right: 40px;
 }
 
 .bread-crumbs-list a {
@@ -752,6 +780,39 @@ img {
 
 .catalog-header {
     background-color: var(--basic-background);
+    height: 89px;
+}
+
+/** Catalog grid **/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+.section-filter {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+.section-sort {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-products {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3 ;
+}
+
+.section-pagination{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
 }
 
 /** Catalog filter, sort **/
@@ -794,8 +855,11 @@ img {
     background-color: var(--basic-beige);
 }
 
-.section-top {
+.section-top ,  .sort-type {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .down-item {
@@ -803,7 +867,7 @@ img {
 }
 
 .sort-type {
-    list-style-type: none;
+    
 }
 
 .sort-link {
@@ -868,6 +932,13 @@ img {
 
 .catalog-info {
     background-color: var(--basic-background);
+    margin-top: 59px;
+    padding-top: 64px;
+    padding-bottom: 68px;
+}
+
+.info-header {
+    color: black;
 }
 
 /** Pagination **/
@@ -879,6 +950,10 @@ img {
     text-transform: uppercase;
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
 }
 
 .pagination-link {
