@@ -93,7 +93,8 @@ img {
 .main-header {
     background-color: var(--basic-background);
     color: var(--white);
-    margin-bottom: 119px;
+    margin-bottom: 59px;
+    padding-bottom: 60px;
 }
 
 .header-bar {
