@@ -119,13 +119,27 @@ img {
     width: 100%;
 }
 
+.header-container {
+    height: 42px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.logo-link {
+    width: 220px;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+}
+
 .main-header-logo {
     width: 220px;
     height: 47px;
+    margin: 0;
+    padding: 0;
 }
 
 .header-account {
-    background-color: var(--basic-dark-grey);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -310,6 +324,7 @@ img {
 .header-about {
     font-size: 14px;
     line-height: 24px;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -323,13 +338,15 @@ img {
 
     width: 197px;
     margin: 0 0 0 30px;
-    padding: 37px 0 45px 0;
+    padding: 42px 0 44px 0;
 }
 
 .header-contacts {
     color: var(--basic-grey);
-    justify-self: center;
-    padding: 41px 0 40px 0;
+    margin-left: auto;
+    padding: 46px 0 40px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .phone-img {
@@ -338,16 +355,26 @@ img {
 
 .header-contacts-phone {
     border: solid var(--white) 3px;
-    margin: 0;
-    padding: 0 45px 0 39px;
-    text-align: center;
-}
-
-.header-contacts-phone a {
     color: var(--basic-red);
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
+    margin: 0;
+    padding: 7px 45px 8px 74px;
+    text-align: center;
+    height: 45px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-contacts-phone::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icon-phone.svg);
+    position: absolute;
+    top: 12px;
+    left: 39px;
 }
 
 .header-contacts-adress {
@@ -361,8 +388,23 @@ img {
 
 .user-links {
     justify-self: end;
-    padding: 41px 0 67px 0;
+    padding: 46px 0 67px 0;
     display: flex;
+    height: 45px;
+    margin-left: 69px;
+}
+
+.user-link {
+    margin: 0;
+    padding: 0;
+}
+
+.user-link:hover {
+    color: var(--basic-red);
+}
+
+.user-link:active {
+    color: var(--basic-light-grey);
 }
 
 .enter-link {
@@ -372,6 +414,7 @@ img {
     line-height: 21px;
     padding: 12px 27px 12px 45px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .enter-link svg {
@@ -387,6 +430,7 @@ img {
     line-height: 21px;
     padding: 12px 24px 12px 24px;
     margin-left: 10px;
+    box-sizing: border-box;
 }
 
 .enter-link:hover, .regisration-link:hover {
@@ -1113,12 +1157,16 @@ img {
 }
 
 .header-login {
+    width: 299px;
+    height: 45px;
     background-color: var(--white);
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     color: black;
     height: 45px;
+    padding: 12px 14px 12px 15px ;
+    box-sizing: border-box;
 }
 
 .header-login a {
@@ -1130,24 +1178,33 @@ img {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    margin: 0;
+    margin: 0 20px 0 20px;
     padding: 0;
 }
 
-.login-link {
-    color: black;
-    font-size: 21px;
-    line-height: 21px;
-    padding: 12px 27px 12px 19px;
+.header-login:hover path {
+    fill: var(--basic-grey);
 }
 
-.login-link:active {
+.header-login:active path {
+    fill: var(--basic-light-grey);
+}
+
+.header-login:active .login-name {
     color: var(--basic-light-grey);
 }
 
-
 .user-menu {
-    margin: 41px 0 42px 51px;
+    padding: 46px 0 42px 49px;
+    margin: 0;
+    height: 70px;
+}
+
+.user-order {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    margin: 7px auto 0 auto;
 }
 
 /** Catalog Bread crumbs **/
