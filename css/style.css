@@ -360,7 +360,7 @@ img {
     font-size: 21px;
     line-height: 30px;
     margin: 0;
-    padding: 7px 45px 8px 74px;
+    padding: 4px 45px 5px 74px;
     text-align: center;
     height: 45px;
     position: relative;
@@ -373,7 +373,7 @@ img {
     height: 19px;
     background-image: url(../img/icon-phone.svg);
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 39px;
 }
 
@@ -693,7 +693,7 @@ img {
 }
 
 .products-item {
-    border: solid 1px var(--basic-light-grey);
+    border: solid 1px #EAEAEA;
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -746,6 +746,7 @@ img {
 .actual-price {
     display: inline-block;
     background-color: var(--basic-red);
+    border-radius: 3px 0 0 3px;
     color: var(--white);
     font-size: 17px;
     line-height: 18px;
@@ -1195,7 +1196,7 @@ img {
 }
 
 .user-menu {
-    padding: 46px 0 42px 49px;
+    padding: 46px 0 42px 50px;
     margin: 0;
     height: 70px;
 }
@@ -1218,6 +1219,21 @@ img {
 
 .bread-crumbs-item {
     margin-right: 40px;
+    position: relative;
+}
+
+.bread-crumbs-item::after {
+    content: "";
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/icon-right-small.svg");
+    position: absolute;
+    right: -25px;
+    top: 6px;
+}
+
+.bread-crumbs-item:last-child::after {
+    display: none;
 }
 
 .bread-crumbs-list a {
@@ -1289,6 +1305,7 @@ img {
     line-height: 18px;
     margin: 0;
     padding: 0;
+    border-radius: 5px;
 }
 
 .filter-title {
@@ -1322,10 +1339,196 @@ img {
     color: black;
 }
 
+/** Range filter price **/
+
 .filter-price {
     font-size: 17px;
     line-height: 18px;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
+
+.filter-price .filter-legend {
+    padding: 14px 0 10px 0; 
+}
+
+.range-filter {
+    width: 220px;
+}
+
+.range-controls {
+    height: 80px;
+    background-color: var(--basic-beige);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+    padding: 39px 20px 0 20px;
+    position: relative;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #D7DCDE;
+}
+
+.range-controls .bar {
+    background-color: #00CA74;
+    width: 80%;
+    height: 2px;
+}
+
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #EAEAEA;
+}
+
+.price-controls input {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    background-color: var(--basic-beige);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    width: 95px;
+}
+
+/** Filter manufacturer **/
+
+.filter-manufacturer-list {
+    padding-bottom: 6px;
+    border-bottom: solid 1px #EAEAEA;
+    margin-bottom: 18px;
+}
+
+.filter-manufacturer .filter-legend {
+    padding: 16px 0 17px 0;
+}
+
+.filter-item {
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+
+.filter-item label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-item label::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border: solid 2px var(--basic-light-grey);
+    border-radius: 3px;
+    position: absolute;
+    top: -2px;
+    left: -35px;
+}
+
+.filter-item-input:checked + label::before {
+    display: none;
+}
+
+.filter-item-input:checked + label::after {
+    content: "";
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg") ;
+    background-position: left;
+    position: absolute;
+    top: -2px;
+    left: -35px;
+}
+
+/** Filter power **/
+
+.filter-power-list {
+    padding-top: 23px;
+    padding-bottom: 15px ;
+}
+
+.filter-power-item {
+    padding-bottom: 22px;
+    padding-left: 35px;
+}
+
+.filter-power-item label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-power-item label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 4px var(--basic-light-grey);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -35px;
+}
+
+.filter-power-input:checked + label::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: var(--basic-light-grey);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -27px;
+}
+
+.filter-button {
+    background-color: var(--white);
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    padding: 10px 0 10px 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/** Section sort **/
+
 .section-sort {
     background-color: var(--basic-beige);
 }
@@ -1343,6 +1546,10 @@ img {
 
 .down-item {
     transform: rotate(180deg);
+}
+
+.down-item path {
+    fill: var(--basic-light-grey);
 }
 
 .sort-type {
@@ -1381,13 +1588,30 @@ img {
     background-color: var(--basic-green);
     color: var(--white);
     text-transform: uppercase;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     border: none;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0px #367315;
     margin: 38px 44px 10px 41px;
+    padding: 0;
+    padding-left: 20px;
+    position: relative;
 
     min-width: 135px;
     min-height: 38px;
+}
+
+.button-buy::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.3;
+    position: absolute;
+    left: 35px;
+    top: 9px;
 }
 
 .button-buy:hover {
@@ -1400,8 +1624,11 @@ img {
 
 .button-bookmarks {
     background-color: var(--white);
-    border: none;
-    outline: solid 3px var(--basic-green);
+    border: solid 3px var(--basic-green);
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
     color: var(--basic-grey);
     text-transform: uppercase;
     font-size: 14px;
