@@ -23,7 +23,7 @@
         <a class="logo-link" href="#"><img class="main-header-logo" src="img/logo.svg" width="220" height="47"
             alt="Логотип компании Техномарт"></a>
         <label class="search-container">
-          <input class="input-search" type="search" placeholder=" Поиск:">
+          <input class="input-search" type="search" placeholder="Поиск:">
           <svg class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -48,10 +48,9 @@
     </div>
 
     <div class="header-about container">
-      <p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-info">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="header-contacts">
-        <a class="header-contacts-phone" href="tel:+78125550555">
-          <!--<img src="img/icon-phone.svg" alt="" width="19" height="19">-->+7 (812) 555-05-55</a>
+        <a class="header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
@@ -100,21 +99,17 @@
       <section class="features">
         <h2 class="hidden">Преимущества компании</h2>
         <ul class="features-list">
-          <li class="features-item features-materials">
+          <li class="features-item features-materials new-item">
             <h3 class="features-title">Материалы</h3>
             <a class="features-link" href="#">на любой вкус</a>
-            <img class="materials-img" src="img/icon-paint.svg" width="44" height="65" alt="">
-            <span class="new">New</span>
           </li>
           <li class="features-item features-tool">
             <h3 class="features-title">Инструмент</h3>
             <a class="features-link" href="#">на все случаи</a>
-            <img class="tool-img" src="img/icon-drel.svg" width="75" height="61" alt="">
           </li>
           <li class="features-item features-technics">
             <h3 class="features-title">Техника</h3>
             <a class="features-link" href="#">для стройки</a>
-            <img class="technics-img" src="img/icon-auto.svg" width="78" height="62" alt="">
           </li>
           <li class="features-item feature-slider">
             <a class="button catalog-button slider-button" href="catalog.html">Открыть католог</a>
@@ -138,12 +133,10 @@
           <li class="features-item features-sales">
             <h3 class="features-title">Скидки 50%</h3>
             <a class="features-link" href="#">на 350 товаров</a>
-            <img class="sales-img" src="img/icon-sale.svg" width="59" height="72" alt="">
           </li>
           <li class="features-item features-delivery">
             <h3 class="features-title">Доставка</h3>
             <a class="features-link" href="#">бесплатно</a>
-            <img class="delivery-img" src="img/icon-delivery.svg" width="78" height="63" alt="">
           </li>
         </ul>
       </section>
@@ -155,21 +148,20 @@
         </div>
         <ul class="products-list">
           <li class="products-item">
-            <img src="img/bosh-9000.jpg" width="184" height="164" alt="">
+            <img class="products-bosh-nine" src="img/bosh-9000.jpg" width="184" height="164" alt="">
             <div class="products-description">
               <h3 class="products-title">Перфоратор BOSCH BFG 9000</h3>
               <p class="old-price">32500 Р.</p>
-              <p class="actual-price">25500 Р.</p>
+              <p class="actual-price actual-first-price">25500 Р.</p>
             </div>
           </li>
-          <li class="products-item">
+          <li class="products-item new-item">
             <img class="product-bosh-three" src="img/bosh-3000.jpg" width="127" height="112" alt="">
             <div class="products-description">
-              <h3 class="products-title">Перфоратор BOSCH BFG 3000</h3>
+              <h3 class="products-title title-bosh-three">Перфоратор BOSCH BFG 3000</h3>
               <p class="old-price">22500 Р.</p>
               <p class="actual-price">15500 Р.</p>
             </div>
-            <span class="new">New</span>
           </li>
           <li class="products-item">
             <img class="product-bosh-six" src="img/bosh-6000.jpg" width="144" height="128" alt="">
@@ -179,22 +171,21 @@
               <p class="actual-price">25500 Р.</p>
             </div>
           </li>
-          <li class="products-item">
+          <li class="products-item new-item">
             <img class="product-bosh-two" src="img/bosh-2000.jpg" width="127" height="112" alt="">
             <div class="products-description">
-              <h3 class="products-title">Перфоратор BOSCH BFG 2000</h3>
+              <h3 class="products-title title-bosh-two">Перфоратор BOSCH BFG 2000</h3>
               <p class="old-price">22500 Р.</p>
               <p class="actual-price">12500 Р.</p>
             </div>
-            <span class="new">New</span>
           </li>
         </ul>
       </section>
 
       <section class='manufacturer'>
-        <div class="section-bar">
+        <div class="manufacturer-bar">
           <h2 class="section-title">Популярные производители:</h2>
-          <a href="#" class="button catalog-button">Открыть каталог</a>
+          <a href="#" class="button manufacturer-button">Все производители</a>
         </div>
         <ul class="manufacturer-list">
           <li class="manufacturer-item">
@@ -296,24 +287,25 @@
             height="158" alt="карта"></a>
         <a class="button button-map" href="#">Заблудились? Напишите нам!</a>
       </section>
+
       <form class="mail-popap hidden" method="POST" action="https://echo.htmlacademy.ru">
-        <!--Не уверена какие значения артибутам тут сделать -->
+        <h2 class="hidden">Форма обратной связи</h2>
         <ul class="mail-list">
           <li class="mail-item">
-            <label for="mail-name">Ваше имя:</label>
-            <input class="mail-name" type="text" placeholder="Имя Фамилия">
+            <label for="user-mail-name">Ваше имя:</label>
+            <input class="mail-name" id="user-mail-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
           </li>
           <li class="mail-item">
-            <label for="mail-email">Ваш e-mail:</label>
-            <input class="mail-email" type="email" placeholder="email@example.com">
+            <label for="user-mail-email">Ваш e-mail:</label>
+            <input class="mail-email" id="user-mail-email" type="email" name="user-email" value="" placeholder="email@example.com">
           </li>
           <li class="mail-item">
-            <label for="mail-text">Текст письма:</label>
-            <textarea class="mail-text" placeholder="В свободной форме"></textarea>
+            <label for="user-mail-text">Текст письма:</label>
+            <textarea class="mail-text" id="user-mail-text" name="user-text" value="" placeholder="В свободной форме"></textarea>
           </li>
         </ul>
         <div class="mail-button-bar">
-          <button class="button mail-button-send" type="button">Отправить</button>
+          <button class="button mail-button-send" type="submit">Отправить</button>
         </div>
         <button class="button mail-button-close" type="button"><svg width="21" height="21" viewBox="0 0 21 21"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -322,10 +314,13 @@
               fill="#EE3643" />
           </svg></button>
       </form>
+
       <div class="map-popap hidden">
-        <button class="button map-button-close" type="button"><svg width="21" height="21" viewBox="0 0 21 21"
+        <h2 class="hidden">Адрес на карте</h2>
+        <iframe width="943px" height="449px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616311794!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613931424519!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button class="button map-button-close" type="button"><svg alt ="" width="21" height="21" viewBox="0 0 21 21"
             fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
+           <path
               d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
               fill="#EE3643" />
           </svg></button>
@@ -339,7 +334,7 @@
     <div class="container">
       <section class="footer-about">
         <h2 class="hidden">Информация о компании</h2>
-        <a class="footer-logo" href="#"><img src="img/logo.svg" width="220" height="68" alt="Логотип"></a>
+        <a class="footer-logo" href="#"><img src="img/logo-footer.svg" width="220" height="68" alt="Логотип"></a>
         <p class="footer-about-adress">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
