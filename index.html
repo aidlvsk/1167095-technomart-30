@@ -117,6 +117,10 @@
                 alt="назад"></button>
             <button class="slider-button-right" type="button"><img src="img/icon-left.svg" width="22" height="40"
                 alt="вперед"></button>
+            <ul class="slider-bullets">
+              <li class="slider-bullet-item"><span class="slider-bullet"></span></li>
+              <li class="slider-bullet-item"><span class="slider-bullet bullet-active"></span></li>
+            </ul>
             <div class="features-perforator">
               <div class="slider-title-background">
                 <h3 class="slider-title">Перфораторы</h3>
@@ -149,7 +153,11 @@
         <ul class="products-list">
           <li class="products-item">
             <img class="products-bosh-nine" src="img/bosh-9000.jpg" width="184" height="164" alt="">
-            <div class="products-description">
+            <div class="products-buttons">
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button-bookmarks" type="button">В закладки</button>
+            </div>
+            <div class="product-description">
               <h3 class="products-title">Перфоратор BOSCH BFG 9000</h3>
               <p class="old-price">32500 Р.</p>
               <p class="actual-price actual-first-price">25500 Р.</p>
@@ -157,7 +165,11 @@
           </li>
           <li class="products-item new-item">
             <img class="product-bosh-three" src="img/bosh-3000.jpg" width="127" height="112" alt="">
-            <div class="products-description">
+            <div class="products-buttons">
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button-bookmarks" type="button">В закладки</button>
+            </div>
+            <div class="product-description">
               <h3 class="products-title title-bosh-three">Перфоратор BOSCH BFG 3000</h3>
               <p class="old-price">22500 Р.</p>
               <p class="actual-price">15500 Р.</p>
@@ -165,7 +177,11 @@
           </li>
           <li class="products-item">
             <img class="product-bosh-six" src="img/bosh-6000.jpg" width="144" height="128" alt="">
-            <div class="products-description">
+            <div class="products-buttons">
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button-bookmarks" type="button">В закладки</button>
+            </div>
+            <div class="product-description">
               <h3 class="products-title">Перфоратор BOSCH BFG 6000</h3>
               <p class="old-price">30500 Р.</p>
               <p class="actual-price">25500 Р.</p>
@@ -173,7 +189,11 @@
           </li>
           <li class="products-item new-item">
             <img class="product-bosh-two" src="img/bosh-2000.jpg" width="127" height="112" alt="">
-            <div class="products-description">
+            <div class="products-buttons">
+              <button class="button-buy" type="button">Купить</button>
+              <button class="button-bookmarks" type="button">В закладки</button>
+            </div>
+            <div class="product-description">
               <h3 class="products-title title-bosh-two">Перфоратор BOSCH BFG 2000</h3>
               <p class="old-price">22500 Р.</p>
               <p class="actual-price">12500 Р.</p>
@@ -244,7 +264,7 @@
         </figure>
 
         <figure class="services-content content-garantee hidden">
-          <h3 class="section-title content-title">Гарантия</h3>
+          <h3 class="section-title content-title garantee-title">Гарантия</h3>
           <p class="section-subtitle">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара,
             спровоцированного его<br>возгоранием, вы всегда можете быть уверены в нашей<br>гарантии.
             Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
@@ -255,7 +275,7 @@
           <p class="section-subtitle">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на
             помощь.
           </p>
-          <a class="button button-request href=" #">Отправить заявку</a>
+          <a class="button button-request" href="#">Отправить заявку</a>
         </figure>
       </div>
 
@@ -293,15 +313,18 @@
         <ul class="mail-list">
           <li class="mail-item">
             <label for="user-mail-name">Ваше имя:</label>
-            <input class="mail-name" id="user-mail-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
+            <input class="mail-name" id="user-mail-name" type="text" name="user-name" value=""
+              placeholder="Имя Фамилия">
           </li>
           <li class="mail-item">
             <label for="user-mail-email">Ваш e-mail:</label>
-            <input class="mail-email" id="user-mail-email" type="email" name="user-email" value="" placeholder="email@example.com">
+            <input class="mail-email" id="user-mail-email" type="email" name="user-email" value=""
+              placeholder="email@example.com">
           </li>
           <li class="mail-item">
             <label for="user-mail-text">Текст письма:</label>
-            <textarea class="mail-text" id="user-mail-text" name="user-text" value="" placeholder="В свободной форме"></textarea>
+            <textarea class="mail-text" id="user-mail-text" name="user-text"
+              placeholder="В свободной форме"></textarea>
           </li>
         </ul>
         <div class="mail-button-bar">
@@ -317,10 +340,12 @@
 
       <div class="map-popap hidden">
         <h2 class="hidden">Адрес на карте</h2>
-        <iframe width="943px" height="449px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616311794!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613931424519!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <button class="button map-button-close" type="button"><svg alt ="" width="21" height="21" viewBox="0 0 21 21"
+        <iframe class="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616311794!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613931424519!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button class="button map-button-close" type="button"><svg width="21" height="21" viewBox="0 0 21 21"
             fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path
+            <path
               d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
               fill="#EE3643" />
           </svg></button>
