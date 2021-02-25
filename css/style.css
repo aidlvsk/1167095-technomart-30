@@ -952,6 +952,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin-left: 17px;
 
     width: 620px;
     height: 282px;
@@ -961,8 +962,6 @@ img {
 
     border-top: solid var(--basic-red) 7px;
 }
-
-
 
 .success-message {
     margin: 0;
@@ -1932,6 +1931,11 @@ img {
 
 .button-buy:active {
     background-color: var(--special-dark-green);
+    outline: none;
+}
+
+.button-buy:focus {
+    outline: none;
 }
 
 .button-bookmarks {
@@ -1959,6 +1963,11 @@ img {
 .button-bookmarks:active {
     border-color: rgba(50, 66, 92, 0.5);
     color: rgba(50, 66, 92, 0.5);
+    outline: none;
+}
+
+.button-bookmarks:focus {
+    outline: none;
 }
 
 /** Catalog info **/
@@ -2034,6 +2043,7 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
+    margin-left: -8px;
     transform: translate(-50%,-50%);
 }
 
@@ -2135,6 +2145,7 @@ img {
     position: fixed;
     top: 50%;
     left: 49%;
+    margin-left: 4px;
     transform: translate(-50%,-50%);
 }
 
