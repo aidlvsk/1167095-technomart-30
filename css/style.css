@@ -60,6 +60,19 @@ img {
   }
 
 .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.display-none {
     display: none;
 }
 
@@ -753,14 +766,14 @@ img {
 }
 
 .products-item {
-    border: solid 1px #EAEAEA;
+    border: solid 1px var(--special-light-grey);
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
     width: 220px;
-    height: 318px;
+    min-height: 318px;
     padding: 0 17px 21px 18px;
     margin: 0;
     box-sizing: border-box;
@@ -773,14 +786,14 @@ img {
 }
 
 .products-item-catalog {
-    border: solid 1px #EAEAEA;
+    border: solid 1px var(--special-light-grey);
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
     width: 220px;
-    height: 318px;
+    min-height: 318px;
     padding: 0 17px 21px 18px;
     margin: 0;
     box-sizing: border-box;
@@ -812,7 +825,7 @@ img {
     background-color: var(--white);
     position: absolute;
     display: none;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     margin-top: -4px;
 }
 
@@ -961,6 +974,8 @@ img {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 
     border-top: solid var(--basic-red) 7px;
+
+    display: none;
 }
 
 .success-message {
@@ -1034,7 +1049,7 @@ img {
 }
 
 .manufacturer-item {
-    border: solid 1px #EAEAEA;
+    border: solid 1px var(--special-light-grey);
     width: 220px;
     height: 145px;
     box-sizing: border-box;
@@ -1451,6 +1466,7 @@ img {
 .login-link {
     position: relative;
     top: 2px;
+    display: flex;
 }
 
 .exit-link {
@@ -1470,18 +1486,27 @@ img {
     text-align: center;
     margin: 0 20px 0 20px;
     padding: 0;
+    color: var(--black);
 }
 
-.header-login:hover path {
+.login-link:hover path {
     fill: var(--basic-grey);
 }
 
-.header-login:active path {
+.login-link:active path {
     fill: var(--basic-light-grey);
 }
 
-.header-login:active .login-name {
+.login-link:active .login-name {
     color: var(--basic-light-grey);
+}
+
+.exit-link:hover path {
+    fill: var(--basic-grey);
+}
+
+.exit-link:active path {
+    fill: var(--basic-light-grey);
 }
 
 .user-menu {
@@ -1811,7 +1836,7 @@ img {
 .filter-button {
     background-color: var(--white);
     width: 100%;
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--special-light-grey);
     padding: 10px 0 10px 0;
     font-weight: normal;
     font-size: 13px;
