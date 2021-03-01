@@ -29,6 +29,7 @@
     --light-grey: #E5E5E5;
     --grey: #A9A9A9;
     --basic-transparant-grey: #F4F4F4;
+    --border-grey: #B5B5B5 ;
 }
 
 /** Global **/
@@ -785,6 +786,15 @@ img {
     align-items: center;
 }
 
+.products-item:focus {
+    outline: none;
+}
+
+.products-item:focus .products-buttons,
+.products-item:focus-within .products-buttons {
+    display: block;
+}
+
 .products-item-catalog {
     border: solid 1px var(--special-light-grey);
     font-family: 'PT Sans', 'Arial', sans-serif;
@@ -804,6 +814,15 @@ img {
     flex-direction: column;
     align-items: center;
     padding-top: 3px;
+}
+
+.products-item-catalog:focus {
+    outline: none;
+}
+
+.products-item-catalog:focus .products-buttons,
+.products-item-catalog:focus-within .products-buttons {
+    display: block;
 }
 
 .products-item img {
@@ -1406,6 +1425,7 @@ img {
 .social-item:hover {
     background-color: var(--basic-red);
 }
+
 .footer-adress {
     margin: 0;
     padding: 0;
@@ -1775,6 +1795,24 @@ img {
     left: -35px;
 }
 
+.filter-item-input:hover + label::before {
+    border: solid 2px var(--border-grey);
+}
+
+.filter-item-input:disabled + label::before {
+    border: solid 2px var(--border-grey);
+    opacity: 0.3;
+}
+
+.filter-item-input:disabled + label::after {
+    opacity: 0.3;
+}
+
+.filter-item-input:disabled + label {
+    color: var(--border-grey);
+    opacity: 0.3;
+}
+
 .filter-item-input:checked + label::before {
     display: none;
 }
@@ -1788,6 +1826,23 @@ img {
     position: absolute;
     top: -2px;
     left: -35px;
+}
+
+.filter-item-input:checked:hover + label::after {
+    background-image: url("../img/checkbox-hover.svg");
+}
+
+.filter-item-input:checked:disabled + label::after {
+    background-image: url("../img/checkbox-hover.svg");
+    opacity: 0.3;
+}
+
+.filter-item-input:focus + label::before {
+    outline: auto;
+}
+
+.filter-item-input:focus + label::after {
+    outline: auto;
 }
 
 /** Filter power **/
@@ -1831,6 +1886,28 @@ img {
     position: absolute;
     top: 5px;
     left: -27px;
+}
+
+.filter-power-input:hover + label::before {
+    border: solid 4px var(--border-grey);
+}
+
+.filter-power-input:checked:hover + label::after {
+    background-color: var(--border-grey);
+}
+
+.filter-power-input:disabled + label::before {
+    border: solid 4px var(--border-grey);
+    opacity: 0.3;
+}
+
+.filter-power-input:disabled + label {
+    color: var(--border-grey);
+    opacity: 0.3;
+}
+
+.filter-power-input:focus + label::before {
+    outline: auto;
 }
 
 .filter-button {
@@ -1959,10 +2036,6 @@ img {
     outline: none;
 }
 
-.button-buy:focus {
-    outline: none;
-}
-
 .button-bookmarks {
     background-color: var(--white);
     border: solid 3px var(--basic-green);
@@ -1988,10 +2061,6 @@ img {
 .button-bookmarks:active {
     border-color: rgba(50, 66, 92, 0.5);
     color: rgba(50, 66, 92, 0.5);
-    outline: none;
-}
-
-.button-bookmarks:focus {
     outline: none;
 }
 
