@@ -978,9 +978,9 @@ img {
     padding-bottom: 2px;
 }
 
-/** Products Popap  **/
+/** Products Popup  **/
 
-.cart-success-popap {
+.cart-success-popup {
     position: fixed;
     /* top: 50%; */
     left: 50%;
@@ -2126,9 +2126,9 @@ img {
     pointer-events: none;
 }
 
-/** Popap mail **/
+/** Popup mail **/
 
-.mail-popap {
+.mail-popup {
     width: 620px;
     height: 430px;
     border-top: solid 7px var(--basic-red);
@@ -2271,9 +2271,9 @@ img {
     }
   }
 
-/** Popap map **/
+/** Popup map **/
 
-.map-popap {
+.map-popup {
     border-top: solid 7px var(--basic-red);
     box-shadow: 0 4px 20px 0 rgba(34, 60, 80, 0.15);
     width: 943px;
@@ -2307,7 +2307,7 @@ img {
     background-color: transparent;
 }
 
-.popap-show {
+.popup-show {
     display: block;
     animation: bounce 0.6s;
 }
