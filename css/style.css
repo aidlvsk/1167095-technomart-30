@@ -261,6 +261,10 @@ img {
     background-color: var(--basic-green);
     color: rgba(255, 255, 255, 0.5);;
 }
+.search-form {
+    height: 100%;
+    margin: 0;
+}
 
 .search-container {
     flex: 1;
