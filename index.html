@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -22,7 +22,7 @@
       <div class="container header-account">
         <a class="logo-link" href="index.html"><img class="main-header-logo" src="img/logo.svg" width="220" height="47"
             alt="Официальный сайт магазина Техномарт"></a>
-        <label for="input-placeholder" class="search-container"><span class="hidden">Поле поиска</span>
+        <form class="search-form" method="POST" action="https://echo.htmlacademy.ru"><label for="input-placeholder" class="search-container"><span class="hidden">Поле поиска</span>
           <input id="input-placeholder" class="input-search" type="search" name="query" placeholder="Поиск:">
           <svg class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +31,7 @@
               fill="white" />
           </svg>
         </label>
+      </form>
         <ul class="user-navigation">
           <li class="user-navigation-item">
             <a href="#" class="bookmark-link">Закладки:<span> 0</span></a>

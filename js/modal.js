@@ -30,9 +30,7 @@ mailLink.addEventListener("click", function(evt) {
     if(storage && storageEmail) {
         mailEmail.value = storageEmail;
         mailText.focus();
-    } else {
-        mailEmail.focus();
-    }
+    } 
 });
 
 mailPopup.addEventListener("submit", function(evt) {
