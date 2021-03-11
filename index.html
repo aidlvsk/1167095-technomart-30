@@ -304,12 +304,12 @@
         <h2 class="section-title contacts-title">Контакты</h2>
         <p class="section-subtitle">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <a class="contacts-map" href="https://goo.gl/maps/zTwH3XCAZVpeip2f9" aria-label="Открыть карту в Google Maps"><img src="img/map.jpg" width="300"
+        <a class="contacts-map" href="#" aria-label="Открыть карту в Google Maps"><img src="img/map.jpg" width="300"
             height="158" alt="карта"></a>
         <a class="button button-map" href="#">Заблудились? Напишите нам!</a>
       </section>
 
-      <form class="mail-popap display-none" method="POST" action="https://echo.htmlacademy.ru">
+      <form class="mail-popup" method="POST" action="https://echo.htmlacademy.ru">
         <h2 class="hidden">Форма обратной связи</h2>
         <ul class="mail-list">
           <li class="mail-item">
@@ -338,7 +338,7 @@
           </svg></button>
       </form>
 
-      <div class="map-popap display-none">
+      <div class="map-popup">
         <h2 class="hidden">Адрес на карте</h2>
         <iframe class="map-frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616311794!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613931424519!5m2!1sru!2sru"
@@ -422,6 +422,25 @@
 
   </footer>
 
+  <div class="cart-success-popup">
+    <h2 class="hidden">Окно подтверждения заказа</h2>
+    <div class="success-message">
+        <p class="success-text">Товар добавлен в корзину!</p>
+    </div>
+    <div class="success-buttons">
+        <button class="button success-order" type="button">Оформить заказ</button>
+        <button class="button success-next" type="button">Продолжить покупки</button>
+    </div>
+    <button class="success-close" type="button" aria-label="Закрыть окно подтверждения заказа"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
+                fill="#EE3643" />
+        </svg></button>
+</div>
+
+<script src="js/modal.js"></script>
+<script src="js/cart.js"></script>
 
 </body>
 

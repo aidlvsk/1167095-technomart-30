@@ -30,6 +30,7 @@
     --grey: #A9A9A9;
     --basic-transparant-grey: #F4F4F4;
     --border-grey: #B5B5B5 ;
+    --grey-shadow:  rgba(0, 0, 0, 0.15);
 }
 
 /** Global **/
@@ -849,7 +850,7 @@ img {
 }
 
 .products-item:hover, .products-item-catalog:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px var(--grey-shadow);
 }
 
 .products-item:hover .products-buttons {
@@ -977,20 +978,21 @@ img {
     padding-bottom: 2px;
 }
 
-/** Products Popap  **/
+/** Products Popup  **/
 
-.cart-success-popap {
+.cart-success-popup {
     position: fixed;
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: 17px;
+    /* transform: translate(-50%,-50%); */
+    margin-left: -293px;
+    top: 240px;
 
     width: 620px;
     height: 282px;
     box-sizing: border-box;
     background-color: var(--white);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--grey-shadow);
 
     border-top: solid var(--basic-red) 7px;
 
@@ -1078,12 +1080,12 @@ img {
 }
 
 .manufacturer-item:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px var(--grey-shadow);
 }
 
 .manufacturer-item:active {
     opacity: 0.5;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 20px var(--grey-shadow));
 }
 
 .manufacturer-item:active img {
@@ -2124,9 +2126,9 @@ img {
     pointer-events: none;
 }
 
-/** Popap mail **/
+/** Popup mail **/
 
-.mail-popap {
+.mail-popup {
     width: 620px;
     height: 430px;
     border-top: solid 7px var(--basic-red);
@@ -2135,10 +2137,12 @@ img {
     box-sizing: border-box;
     background-color: var(--white);
     position: fixed;
-    top: 50%;
+    
     left: 50%;
-    margin-left: -8px;
-    transform: translate(-50%,-50%);
+    top: 240px;
+    margin-left: -318px;
+   
+    display: none;
 }
 
 .mail-list {
@@ -2227,9 +2231,49 @@ img {
     background-color: transparent;
 }
 
-/** Popap map **/
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
 
-.map-popap {
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
+/** Popup map **/
+
+.map-popup {
     border-top: solid 7px var(--basic-red);
     box-shadow: 0 4px 20px 0 rgba(34, 60, 80, 0.15);
     width: 943px;
@@ -2237,10 +2281,11 @@ img {
     box-sizing: border-box;
 
     position: fixed;
-    top: 50%;
+    top: 240px;
     left: 49%;
-    margin-left: 4px;
-    transform: translate(-50%,-50%);
+    margin-left: -467px;
+
+    display: none;
 }
 
 .map-frame {
@@ -2261,3 +2306,12 @@ img {
 .map-button-close:hover {
     background-color: transparent;
 }
+
+.popup-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.mail-error {
+    animation: shake 0.6s;
+  }
