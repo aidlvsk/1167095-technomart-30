@@ -99,6 +99,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -295,10 +296,12 @@ img {
   padding: 9px 0 9px 42px;
   background-color: var(--basic-dark-grey);
   outline: none;
+  font-size: 18px;
 }
 
 .input-search::placeholder {
   color: var(--white);
+  font-size: 18px;
 }
 
 .input-search:hover+.search-svg {
@@ -357,11 +360,11 @@ img {
   color: var(--basic-red);
   font-style: italic;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 23px;
   text-transform: none;
   width: 197px;
   margin: 0 0 0 30px;
-  padding: 42px 0 42px 0;
+  padding: 45px 0 42px 0;
 }
 
 .header-contacts {
@@ -420,6 +423,9 @@ img {
 .user-link {
   margin: 0;
   padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .user-link:hover {
@@ -577,7 +583,7 @@ img {
   align-items: center;
   color: var(--white);
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: -26px;
   transform: rotate(45deg);
 }
@@ -743,7 +749,7 @@ img {
 
 .section-bar {
   background-color: var(--basic-beige);
-  padding: 25px 14px 30px 28px;
+  padding: 27px 14px 28px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -776,7 +782,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 18px;
+  grid-row-gap: 16px;
   margin-top: 8px;
 }
 
@@ -817,7 +823,7 @@ img {
   text-align: center;
   width: 220px;
   min-height: 318px;
-  padding: 0 17px 21px 18px;
+  padding: 0 17px 20px 18px;
   margin: 0;
   box-sizing: border-box;
   position: relative;
@@ -895,13 +901,14 @@ img {
 
 .title-catalog-bosh-two,
 .title-catalog-bosh-three {
-  margin-top: -2px;
+  margin-top: 0;
   margin-left: -4px;
 }
 
 .old-price {
   color: var(--basic-light-grey);
   display: inline-block;
+  vertical-align: middle;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -924,11 +931,12 @@ img {
 .old-price-hidden {
   display: block;
   visibility: hidden;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .actual-price {
   display: inline-block;
+  vertical-align: middle;
   background-color: var(--basic-red);
   border-radius: 3px 0 0 3px;
   color: var(--white);
@@ -940,6 +948,7 @@ img {
   padding: 10px 24px 10px 32px;
   max-width: 141px;
   position: relative;
+  margin-top: 2px;
 }
 
 .actual-price::after {
@@ -1161,6 +1170,12 @@ img {
 
 .services-subtitle {
   grid-column: 1 / -1;
+  width: 396px;
+}
+
+.delivery-title,
+.delivery-subtitle {
+  width: 278px;
 }
 
 .section-subtitle {
@@ -1249,6 +1264,11 @@ img {
 
 .garantee-title {
   margin-bottom: 25px;
+  width: 312px;
+}
+
+.garantee-subtitle {
+  width: 312px;
 }
 
 .content-credit {
@@ -1259,6 +1279,10 @@ img {
   background-position-y: 68px;
   padding-bottom: 116px;
   width: 710px;
+}
+
+.credit-subtitle {
+  width: 300px;
 }
 
 .button-request {
@@ -1293,6 +1317,7 @@ img {
 
 .promo-subtitle-second {
   margin-bottom: 2px;
+  width: 390px;
 }
 
 .transport-list {
@@ -1330,11 +1355,17 @@ img {
   justify-self: end;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .contacts-title {
   color: var(--black);
   margin-bottom: 24px;
+  width: 300px;
+}
+
+.contacts-subtitle {
+  width: 217px;
 }
 
 .contacts-map {
@@ -1424,6 +1455,7 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
+  line-height: 18px;
 }
 
 .footer-social-list {
@@ -1516,7 +1548,8 @@ img {
 
 /** Catalog header **/
 
-.user-order a, span {
+.user-order a,
+.user-order span {
   color: var(--basic-grey);
   font-size: 16px;
 }
@@ -1590,6 +1623,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 4px auto 0 auto;
+  padding-top: 3px;
 }
 
 /** Catalog Bread crumbs **/
@@ -1909,7 +1943,7 @@ img {
 }
 
 .filter-power-item {
-  padding-bottom: 22px;
+  padding-bottom: 23px;
   padding-left: 35px;
 }
 
@@ -2130,7 +2164,8 @@ img {
 }
 
 .info-subtitle {
-  line-height: 25px;
+  padding-top: 2px;
+  line-height: 24px;
 }
 
 /** Pagination **/
@@ -2237,12 +2272,18 @@ img {
 .mail-name {
   padding: 7px 8px 7px 12px;
   box-sizing: border-box;
+  font-family:  "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .mail-email,
 .mail-text {
   padding: 7px 10px 7px 12px;
   box-sizing: border-box;
+  font-family:  "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .mail-text {
@@ -2280,28 +2321,28 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(0, -2000px);
   }
   70% {
-    transform: translateY(30px);
+    transform: translate(0, 30px);
   }
   90% {
-    transform: translateY(-10px);
+    transform: translate(0, -10px);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    transform: translate(-10px, 0);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    transform: translate(10px, 0);
   }
 }
 
